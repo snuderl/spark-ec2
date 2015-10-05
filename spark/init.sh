@@ -2,6 +2,8 @@
 
 pushd /root > /dev/null
 
+echo "blaz fork"
+
 if [ -d "spark" ]; then
   echo "Spark seems to be installed. Exiting."
   return
@@ -124,7 +126,7 @@ else
         wget http://s3.amazonaws.com/spark-related-packages/spark-1.2.1-bin-hadoop2.4.tgz
       fi
       ;;
-    *)
+    1.5.1)
       if [[ "$HADOOP_MAJOR_VERSION" == "1" ]]; then
         wget http://s3.amazonaws.com/spark-related-packages/spark-$SPARK_VERSION-bin-hadoop1.tgz
       elif [[ "$HADOOP_MAJOR_VERSION" == "2" ]]; then
