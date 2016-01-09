@@ -130,7 +130,7 @@ else
       elif [[ "$HADOOP_MAJOR_VERSION" == "2" ]]; then
         wget http://s3.amazonaws.com/spark-related-packages/spark-$SPARK_VERSION-bin-cdh4.tgz
       else
-        wget http://www.apache.org/dyn/closer.lua/spark/spark-1.6.0/spark-1.6.0-bin-hadoop2.6.tgz
+        wget http://www.apache.si/spark/spark-1.6.0/spark-1.6.0-bin-hadoop2.6.tgz
       fi
       if [ $? != 0 ]; then
         echo "ERROR: Unknown Spark version"
